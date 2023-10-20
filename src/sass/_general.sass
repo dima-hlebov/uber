@@ -1,139 +1,145 @@
-header 
-	position: relative 
+header
+	position: relative
 
-nav 
-	height: 50px 
-	background-color: $menu-c 
+nav
+	height: 50px
+	background-color: $menu-c
 
 .hamburger
 	display: none
 
-.menu 
-	display: flex 
-	justify-content: space-between 
-	padding: 13px 70px 
-	margin: 0 
-	list-style-type: none 
-	&__link 
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+	&__link
 		color: $light-font
-		font-size: 15px 
+		font-size: 15px
 		font-weight: $font-w-light
 		&:hover
 			text-decoration: none
 			color: $primary-c
-	&__item 
-		border-right: 2px dotted black 
-		padding-right: 28px 
+	&__item
+		border-right: 2px dotted black
+		padding-right: 28px
 		&:nth-child(6)
 			border: none
-			
 
-.subheader 
-	position: absolute 
-	width: 100% 
-	height: 83px 
+.subheader
+	position: absolute
+	width: 100%
+	height: 83px
 	background-color: $subheader-c
-	&__logo 
-		display: block 
-		max-width: 100% 
-		margin-top: 16px 
-	&__logo-text 
-		font-size: 13px 
+	&__logo
+		display: flex
+		align-items: center
+		color: white
+		width: 32px
+		height: 32px
+		margin-top: 16px
+		& img
+			margin-right: 5px
+		&:hover
+			text-decoration: none
+			color: white
+	&__logo-text
+		font-size: 13px
 		font-weight: $font-w-regular
-		color: $light-font 
-		opacity: 0.5 
-	&__call 
-		margin-top: 19px 
-		font-size: 12px 
+		color: $light-font
+		opacity: 0.5
+	&__call
+		margin-top: 19px
+		font-size: 12px
 		font-weight: $font-w-light
 		color: $light-font
-		text-align: right 
-	&__number 
-		display: block 
-		margin-top: 8px 
-		font-size: 22px 
+		text-align: right
+	&__number
+		display: block
+		margin-top: 8px
+		font-size: 16px
 		font-weight: $font-w-regular
-		color: $light-font 
-		text-transform: uppercase 
-		text-align: right 
+		color: $light-font
+		text-transform: uppercase
+		text-align: right
 		line-height: 12px
 		&--medium
 			display: none
 
-.subheader .subheader__btn, .promo .promo__btn 
-	margin-top: 19px 
-	width: 172px 
-	height: 46px 
-	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .12) 
-	border: none 
-	border-radius: 4px 
-	background-image: linear-gradient(to top, $primary-c, #4ce2ff 100%) 
-	font-size: 14px 
+.subheader .subheader__btn, .promo .promo__btn
+	margin-top: 19px
+	width: 172px
+	height: 46px
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .12)
+	border: none
+	border-radius: 4px
+	background-image: linear-gradient(to top, $primary-c, #4ce2ff 100%)
+	font-size: 14px
 	font-weight: $font-w-regular
-	color: $light-font 
-	text-transform: uppercase 
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+	color: $light-font
+	text-transform: uppercase
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 	+btn-hover
 
-.promo 
-	min-height: 800px 
-	background: url(../img/mainBG.jpg) center center/cover no-repeat 
-	padding: 150px 0 135px 0 
-	&__header 
-		font-size: 60px 
-		line-height: 60px 
-		color: $light-font 
-		text-transform: uppercase 
+.promo
+	min-height: 800px
+	background: url(../img/mainBG.jpg) center center/cover no-repeat
+	padding: 150px 0 135px 0
+	&__header
+		font-size: 60px
+		line-height: 60px
+		color: $light-font
+		text-transform: uppercase
 		font-weight: $font-w-bold
-		margin: 0 
-		text-align: center 
-	&__subheader 
-		font-size: 36px 
-		line-height: 36px 
-		color: $light-font 
-		text-transform: uppercase 
+		margin: 0
+		text-align: center
+	&__subheader
+		font-size: 36px
+		line-height: 36px
+		color: $light-font
+		text-transform: uppercase
 		font-weight: $font-w-bold
-		text-align: center 
-		margin-top: 22px 
-	&__descr 
-		font-size: 18px 
-		color: $light-font 
-		text-align: center 
+		text-align: center
+		margin-top: 22px
+	&__descr
+		font-size: 18px
+		color: $light-font
+		text-align: center
 		font-weight: $font-w-light
-		margin-top: 23px 
-	&__btn 
-		display: block 
-		margin: 118px auto 0 auto 
-		
-		
+		margin-top: 23px
+	&__btn
+		display: block
+		margin: 118px auto 0 auto
+
 .label
-	display: flex 
-	margin: 0 auto 
-	background-color: $dark-label 
-	font-size: 11px 
-	color: $light-font 
+	display: flex
+	margin: 0 auto
+	background-color: $dark-label
+	font-size: 11px
+	color: $light-font
 	font-weight: $font-w-light
-	text-transform: uppercase 
-	align-items: center 
-	justify-content: center 
-	width: 112px 
+	text-transform: uppercase
+	align-items: center
+	justify-content: center
+	width: 112px
 	height: 24px
 	&--white
 		color: $choise-primary-c
 		background: $light-label
 
-.title 
-	margin: 38px 0 0 0 
-	font-size: 38px 
+.title
+	margin: 38px 0 0 0
+	font-size: 38px
 	color: $dark-font
 	font-weight: $font-w-bold
 	line-height: 1
-	text-transform: uppercase 
+	text-transform: uppercase
 	text-align: center
 	&--white
 		color: $light-font
 
-.subtitle 
+.subtitle
 	margin-top: 19px
 	color: #222222
 	font-size: 17px
@@ -142,37 +148,36 @@ nav
 	text-align: center
 	&--white
 		color: $light-font
-	
-.eight-reasons 
+
+.eight-reasons
 	padding: 71px 0 68px 0
 	&__item
-		display: flex 
-		margin-top: 35px 
-		justify-content: center 
-		align-items: center 
-		width: 100% 
+		display: flex
+		margin-top: 35px
+		justify-content: center
+		align-items: center
+		width: 100%
 		font-weight: $font-w-regular
 		font-size: 17px
-	&__circle 
-		display: flex 
-		justify-content: center 
-		align-items: center 
-		margin-right: 26px 
-		min-width: 113px 
-		min-height: 113px 
-		border-radius: 100% 
-		background-color: $primary-c 
-	&__subtitle 
-		line-height: 21px 
-		color: $primary-c 
-		font-size: 17px 
+	&__circle
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		min-width: 113px
+		min-height: 113px
+		border-radius: 100%
+		background-color: $primary-c
+	&__subtitle
+		line-height: 21px
+		color: $primary-c
+		font-size: 17px
 		font-weight: $font-w-regular
-	&__text 
+	&__text
 		color: $dark-font
-		font-size: 15px 
+		font-size: 15px
 		font-weight: $font-w-light
 		line-height: 21px
-	
 
 .mobile-app
 	padding: 48px 0 79px 0
@@ -215,7 +220,7 @@ nav
 				width: 14px
 				height: 2px
 				background-color: $primary-c
-				transition: transform 0.3s 
+				transition: transform 0.3s
 			&:after
 				content: ''
 				position: absolute
@@ -234,7 +239,7 @@ nav
 
 .choise
 	padding: 56px 0 138px 0
-	background-image: linear-gradient(to bottom, $choise-primary-c  56%, #ffffff 44%)
+	background-image: linear-gradient(to bottom, $choise-primary-c 56%, #ffffff 44%)
 	&__car
 		display: block
 		width: 100%
@@ -243,7 +248,6 @@ nav
 			display: block
 			width: 100%
 			margin: auto 0
-
 
 .requirements
 	padding: 68px 0 84px 0
@@ -260,12 +264,12 @@ nav
 		color: $requirements-c1
 		font-size: 22px
 		font-weight: $font-w-regular
-		
+
 	&__list
 		margin-top: 22px
 		padding-left: 50px
 		list-style-type: none
-		li 
+		li
 			position: relative
 			font-size: 17px
 			font-weight: $font-w-light
@@ -285,7 +289,7 @@ nav
 		margin-top: 22px
 		font-size: 17px
 		font-weight: $font-w-light
-		line-height 24px
+		line-height: 24px
 		color: $requirements-c1
 
 .map
@@ -295,9 +299,9 @@ nav
 	min-height: 717px
 	&__all-cities
 		position: absolute
-		font-size: 15px;
-		color: $primary-c;
-		text-transform: uppercase;
+		font-size: 15px
+		color: $primary-c
+		text-transform: uppercase
 		bottom: 49px
 		left: 50%
 		transform: translateX(-50%)
@@ -341,9 +345,9 @@ nav
 		margin-top: 19px
 		display: flex
 		justify-content: center
-		font-size: 11px;
-		color: #1fbad6;
-		text-transform: uppercase;
+		font-size: 11px
+		color: #1fbad6
+		text-transform: uppercase
 		font-weight: $font-w-regular
 	&__social-ms
 		display: flex
@@ -373,4 +377,3 @@ nav
 				width: 100%
 				height: 100%
 				border-radius: 5px
-
